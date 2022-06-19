@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="4dp"
+    android:layout_marginTop="4dp"
+    android:layout_marginBottom="4dp"
+    android:layout_marginLeft="2dp"
+    android:layout_marginRight="2dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="8dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_image"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:scaleType="centerCrop"
+            android:layout_centerVertical="true"
+            android:src="@drawable/camping"/>
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/iv_image"
+            android:paddingLeft="4dp"
+            android:paddingTop="4dp"
+            android:text="- 캠핑장 입니다"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="4dp"
+            android:layout_marginRight="4dp"
+            android:background="@drawable/ic_baseline_map_24" />
+
+<!--        <Button-->
+<!--            android:id="@+id/fav"-->
+<!--            android:layout_width="30dp"-->
+<!--            android:layout_height="30dp"-->
+<!--            android:layout_alignParentRight="true"-->
+<!--            android:layout_marginStart="4dp"-->
+<!--            android:layout_marginTop="4dp"-->
+<!--            android:layout_marginEnd="4dp"-->
+<!--            android:layout_marginBottom="4dp"-->
+<!--            android:background="@drawable/ic_baseline_star_rate_24"-->
+<!--            android:backgroundTint="#05A3EB"/>-->
+
+
+        <TextView
+            android:id="@+id/tv_addr1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_title"
+            android:layout_toRightOf="@+id/iv_image"
+            android:paddingLeft="4dp"
+            android:paddingTop="4dp"
+            android:text="- 경상북도 칠곡군 가산면 응추리"
+            android:textColor="@color/black"
+            android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/tv_tel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="- 054-972-8032"
+                android:textSize="13sp"
+                android:textColor="@color/black"
+                android:layout_below="@+id/tv_addr1"
+                android:paddingTop="4dp"
+                android:paddingLeft="4dp"
+                android:layout_toRightOf="@+id/iv_image"/>
+
+        <TextView
+            android:id="@+id/tv_lineintro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_tel"
+            android:layout_toRightOf="@+id/iv_image"
+            android:paddingLeft="4dp"
+            android:paddingTop="4dp"
+            android:paddingRight="4dp"
+            android:paddingBottom="4dp"
+            android:text="- 발 아래로 내려다보는 풍경이 일품"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+
+
+</com.google.android.material.card.MaterialCardView>

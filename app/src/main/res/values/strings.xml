@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">캠핑캠핑캠핑</string>
+    <string name="spinner_prompt">도시선택</string>
+</resources>
